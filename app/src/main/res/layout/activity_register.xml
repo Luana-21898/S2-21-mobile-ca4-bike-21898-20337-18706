@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundapp"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/greetUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="44dp"
+        android:text="Register Here!"
+        android:textColor="#5A8B20"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameUserRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/nameUserRegister"
+        app:layout_constraintStart_toStartOf="@+id/nameUserRegister" />
+
+    <EditText
+        android:id="@+id/nameUserRegister"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textEmailAddress"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/newEmailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetUser" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail:"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/newEmailRegister"
+        app:layout_constraintStart_toStartOf="@+id/newEmailRegister" />
+
+    <EditText
+        android:id="@+id/newEmailRegister"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textEmailAddress"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUserRegister" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRegister"
+        app:layout_constraintStart_toStartOf="@+id/newEmailRegister"
+        app:layout_constraintTop_toBottomOf="@+id/newEmailRegister" />
+
+    <EditText
+        android:id="@+id/passwordRegister"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textPassword"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/mobileRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <TextView
+        android:id="@+id/textMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Mobile:"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/passwordRegister"
+        app:layout_constraintTop_toTopOf="@+id/passwordRegister" />
+
+
+    <EditText
+        android:id="@+id/mobileRegister"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textEmailAddress"
+        android:textColor="#5A8B20"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/clearBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegister" />
+
+    <Button
+        android:id="@+id/registerBttn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="OK"
+        android:textColor="#5A8B20"
+        android:textSize="24sp"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/clearBttn"
+        app:layout_constraintEnd_toStartOf="@+id/clearBttn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearBttn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="Clear"
+        android:textColor="#5A8B20"
+        android:textSize="24sp"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintBottom_toTopOf="@+id/textMember"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/registerBttn"
+        app:layout_constraintTop_toBottomOf="@+id/mobileRegister" />
+
+    <TextView
+        android:id="@+id/textMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Already a Member?"
+        android:textColor="#5A8B20"
+        app:layout_constraintBottom_toTopOf="@+id/loginHereBttn"
+        app:layout_constraintStart_toStartOf="@+id/loginHereBttn"
+        app:layout_constraintTop_toBottomOf="@+id/clearBttn" />
+
+    <Button
+        android:id="@+id/loginHereBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/backgroundapp"
+        android:text="Login Here"
+        android:textColor="#5A8B20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMember" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

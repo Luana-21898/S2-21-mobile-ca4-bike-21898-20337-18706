@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundapp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="277dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/hereBttn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imagelogin"
+        tools:srcCompat="@drawable/imagelogin" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#A9C28C"
+        app:layout_constraintBottom_toTopOf="@+id/passwordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogin" />
+
+    <EditText
+        android:id="@+id/passwordLogin"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#A9C28C"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="#5A8B20"
+        app:layout_constraintBottom_toTopOf="@+id/loginBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
+
+
+    <Button
+        android:id="@+id/loginBttn"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="Sign In"
+        android:textColor="#5A8B20"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New? Register"
+        android:textColor="#5A8B20"
+        app:layout_constraintBottom_toTopOf="@+id/hereBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBttn" />
+
+    <Button
+        android:id="@+id/hereBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="11dp"
+        android:autoLink="web"
+        android:backgroundTint="@color/backgroundapp"
+        android:linksClickable="true"
+        android:text="Here"
+        android:textAllCaps="false"
+        android:textColor="#5A8B20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
