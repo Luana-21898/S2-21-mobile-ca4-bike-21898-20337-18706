@@ -97,7 +97,7 @@
             app:backgroundTint="#5A8B20" />
 
         <Button
-            android:id="@+id/paris"
+            android:id="@+id/lyon"
             android:layout_width="90dp"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
@@ -105,8 +105,8 @@
             android:layout_marginStart="200dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="0dp"
-            android:onClick="callParis"
-            android:text="Paris"
+            android:onClick="callLyon"
+            android:text="Lyon"
             android:background="@drawable/dimens"
             app:backgroundTint="#5A8B20" />
 

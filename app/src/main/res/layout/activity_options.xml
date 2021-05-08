@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundapp"
+    tools:context=".Options">
+
+
+    <Button
+        android:id="@+id/weatherBtn"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="Weather"
+        android:textColor="#5A8B20"
+        android:textSize="24sp"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dublinMap"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="Dublin Map"
+        android:textColor="#5A8B20"
+        android:textSize="24sp"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherBtn" />
+
+    <Button
+        android:id="@+id/lyonMap"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/dimens"
+        android:backgroundTint="#F8F8F8"
+        android:text="Lyon Map"
+        android:textColor="#5A8B20"
+        android:textSize="24sp"
+        app:backgroundTint="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dublinMap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

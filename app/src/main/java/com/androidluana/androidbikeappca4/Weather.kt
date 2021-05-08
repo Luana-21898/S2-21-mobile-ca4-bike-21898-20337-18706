@@ -136,7 +136,7 @@ class Weather : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_CODE) {
             if (grantResults.size > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Location get Succesffully", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Location successfully obtained", Toast.LENGTH_SHORT)
                     .show()
                 weatherForCurrentLocation
             } else {
@@ -149,7 +149,7 @@ class Weather : AppCompatActivity() {
         val client = AsyncHttpClient()
         client.get(WEATHER_URL, params, object : JsonHttpResponseHandler() {
             override fun onSuccess(statusCode: Int, headers: Array<Header?>?, response: JSONObject?) {
-                Toast.makeText(this@Weather, "Data Get Success", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Weather, "Data obtained successfully", Toast.LENGTH_SHORT).show()
                 val weatherD = WeatherData.fromJson(response!!)
                 updateUI(weatherD)
 
@@ -183,11 +183,12 @@ class Weather : AppCompatActivity() {
         }
     }
 
+    //calling the citys after click the button.
     fun callDublin(view: View?) {
-        getWeatherForNewCity("Dublin")
+        getWeatherForNewCity("Temple Bar")
     }
 
-    fun callParis(view: View?) {
-        getWeatherForNewCity("Paris")
+    fun callLyon(view: View?) {
+        getWeatherForNewCity("Lyon")
     }
 }

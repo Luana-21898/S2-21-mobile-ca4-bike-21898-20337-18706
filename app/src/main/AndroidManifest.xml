@@ -31,8 +31,12 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:name=".LyonMap"
+            android:label="@string/title_activity_lyon_map"></activity>
+        <activity android:name=".Options" />
+        <activity
+            android:name=".DublinMap"
+            android:label="@string/title_activity_maps" />
         <activity android:name=".Weather" />
         <activity android:name=".Register" />
         <activity android:name=".Profile" />

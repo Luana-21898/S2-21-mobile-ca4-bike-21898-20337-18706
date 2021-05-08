@@ -38,12 +38,12 @@ class Profile : AppCompatActivity() {
         mobile.setText(strMobile)
 
         options.setOnClickListener {
-            openWeather()
+            openOptions()
         }
     }
 
-    private fun openWeather() {
-        val intent = Intent(this, Weather::class.java)
+    private fun openOptions() {
+        val intent = Intent(this, Options::class.java)
         startActivity(intent)
     }
 }
